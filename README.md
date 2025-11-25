@@ -11,7 +11,6 @@ It includes core architecture, login functionality, DAO–Service structure, dat
 This version is intentionally limited to meet Review-1 requirements 
 
 
-
 ## Review-1 Scope:-
   #### Included:-               
 
