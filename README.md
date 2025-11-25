@@ -2,7 +2,7 @@
 The application will allow users to log their workouts, set fitness goals, and track their progress over time. It will provide personalized fitness recommendations and allow users to join fitness challenges. Administrators will handle user management, oversee fitness content, and maintain system settings.
 
 
-## Project Overview
+### Project Overview
 
 The Online Fitness Tracker (Review-1 Version) is the foundational stage of a multi-module fitness application.
 It includes core architecture, login functionality, DAO–Service structure, database connectivity, error handling, and a minimal workout log screen.
@@ -11,7 +11,7 @@ This version is intentionally limited to meet Review-1 requirements
 
 
 
-##  Review-1 Scope
+###  Review-1 Scope
  Included
 
     Login System (Swing + JDBC)
@@ -37,7 +37,7 @@ Not included (Review-2 features)
     Analytics / Graphs
     Exporting / Reports
 
-##  Project Directory Structure
+###  Project Directory Structure
      OnlineFitnessTracker/
      │
      ├── sql/
@@ -79,7 +79,7 @@ Not included (Review-2 features)
      │
      └── README.md
 
-## Technology Stack
+### Technology Stack
 
     | Layer        | Technology                |
     | ------------ | ------------------------- |
@@ -91,7 +91,7 @@ Not included (Review-2 features)
     | IDE          | IntelliJ IDEA (non-Maven) |
 
 
-## Database Schema
+### Database Schema
 
    Table: users
 
@@ -117,7 +117,7 @@ Not included (Review-2 features)
 
 
 
-# 6. Features Implemented
+### Features Implemented
    1. Login System
       
           Swing UI
@@ -152,9 +152,9 @@ Not included (Review-2 features)
 
 
           Used in WorkoutDaoImpl
-          conn.setAutoCommit(false)
-          conn.commit()
-          conn.rollback()
+               conn.setAutoCommit(false)
+               conn.commit()
+               conn.rollback()
 
    7.. Exception & Error Handling
    
@@ -162,16 +162,12 @@ Not included (Review-2 features)
           Service
           UI
 
-# 7. How to Run
-Step 1 — Install
-
-Java 17
-
-MySQL 8
-
-IntelliJ IDEA
-
-MySQL JDBC Driver (Connector/J)
+###  How to Run
+   * Step 1
+      Install -  Java 17
+                 MySQL 8
+                 IntelliJ IDEA
+                 MySQL JDBC Driver (Connector/J)
 
 Step 2 — Configure Database
  sql/fitness_db.sql
