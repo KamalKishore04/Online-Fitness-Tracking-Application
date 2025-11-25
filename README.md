@@ -13,18 +13,18 @@ This version is intentionally limited to meet Review-1 requirements
 
 
 ## Review-1 Scope:-
-  #### Included:-
+  #### Included:-               
 
-  1. Login System (Swing + JDBC)
-  2.  DB Connection (MySQL + JDBC)
-  3.   User & Workout Models
-  4.  DAO Interfaces + Implementations
-  5.  Service Layer + Validation
-  6. ultithreading (login thread)
-  7. Collections + Generics
-  8.  Transaction Management
-  9.   Error Handling
- 10.  Basic UI (Login + Workout Log)
+ -  Login System (Swing + JDBC)  
+  - DB Connection (MySQL + JDBC)     
+  - User & Workout Models        
+  - DAO Interfaces + Implementations           
+  - Service Layer + Validation           
+ -  Multithreading (login thread)       
+ -  Collections + Generics       
+  - Transaction Management         
+  - Error Handling       
+ -  Basic UI (Login + Workout Log)
 
 
   #### Not included (Review-2 features)
