@@ -1,4 +1,4 @@
-## Online-Fitness-Tracking-Application
+# Online-Fitness-Tracking-Application
 The application will allow users to log their workouts, set fitness goals, and track their progress over time. It will provide personalized fitness recommendations and allow users to join fitness challenges. Administrators will handle user management, oversee fitness content, and maintain system settings.
 
 
@@ -11,7 +11,7 @@ This version is intentionally limited to meet Review-1 requirements
 
 
 
-###  Review-1 Scope
+###  Review-1 Scope:-
  Included
 
     Login System (Swing + JDBC)
@@ -37,7 +37,7 @@ Not included (Review-2 features)
     Analytics / Graphs
     Exporting / Reports
 
-###  Project Directory Structure
+###  Project Directory Structure:-
      OnlineFitnessTracker/
      │
      ├── sql/
@@ -79,7 +79,7 @@ Not included (Review-2 features)
      │
      └── README.md
 
-### Technology Stack
+### Technology Stack:-
    | Layer        | Technology                |
    | ------------ | ------------------------- |
    | Language     | Java 17                   |
@@ -90,28 +90,28 @@ Not included (Review-2 features)
    | IDE          | IntelliJ IDEA (non-Maven) |
 
 
-### Database Schema
+### Database Schema:-
 
    Table: users
 
-    | Column   | Type                     | Description           |
-    | -------- | ------------------------ | --------------------- |
-    | id       | INT (PK, AUTO_INCREMENT) | User ID               |
-    | name     | VARCHAR(100)             | User name             |
-    | email    | VARCHAR(100)             | Unique email          |
-    | password | VARCHAR(100)             | Plain password for R1 |
-    | role     | ENUM("USER")             | Only USER role in R1  |
+   | Column   | Type                     | Description           |
+   | -------- | ------------------------ | --------------------- |
+   | id       | INT (PK, AUTO_INCREMENT) | User ID               |
+   | name     | VARCHAR(100)             | User name             |
+   | email    | VARCHAR(100)             | Unique email          |
+   | password | VARCHAR(100)             | Plain password for R1 |
+   | role     | ENUM("USER")             | Only USER role in R1  |
 
 
    Table: workouts
 
-    | Column       | Type                     | Description     |
-    | ------------ | ------------------------ | --------------- |
-    | id           | INT (PK, AUTO_INCREMENT) | Workout ID      |
-    | user_id      | INT FK                   | Ref to users.id |
-    | workout_type | VARCHAR(50)              | Cardio/Yoga/etc |
-    | duration     | INT                      | Time in minutes |
-    | workout_date | DATE                     | Date of workout |
+   | Column       | Type                     | Description     |
+   | ------------ | ------------------------ | --------------- |
+   | id           | INT (PK, AUTO_INCREMENT) | Workout ID      |
+   | user_id      | INT FK                   | Ref to users.id |
+   | workout_type | VARCHAR(50)              | Cardio/Yoga/etc |
+   | duration     | INT                      | Time in minutes |
+   | workout_date | DATE                     | Date of workout |
 
 
 
