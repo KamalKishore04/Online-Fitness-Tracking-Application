@@ -127,13 +127,13 @@ This version is intentionally limited to meet Review-1 requirements
       
 
    2. DAO Layer                  
-              UserDao + WorkoutDao       
-              PreparedStatement (safe from SQL injection)        
+       - UserDao + WorkoutDao       
+      -  PreparedStatement (safe from SQL injection)        
 
    3. Service Layer                
-              Validation of inputs         
-              Business rules           
-              Simplified logic for Review-1        
+          -     Validation of inputs         
+          -     Business rules           
+         -  Simplified logic for Review-1        
       
    4. Multithreading                  
               Login operation runs in:       
