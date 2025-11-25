@@ -12,30 +12,30 @@ This version is intentionally limited to meet Review-1 requirements
 
 
 ###  Review-1 Scope:-
- Included
+** Included:-
 
-    Login System (Swing + JDBC)
-    DB Connection (MySQL + JDBC)
-    User & Workout Models
-    DAO Interfaces + Implementations
-    Service Layer + Validation
-    Multithreading (login thread)
-    Collections + Generics
-    Transaction Management
-    Error Handling
-    Basic UI (Login + Workout Log)
+   Login System (Swing + JDBC)
+   DB Connection (MySQL + JDBC)
+   User & Workout Models
+   DAO Interfaces + Implementations
+   Service Layer + Validation
+   Multithreading (login thread)
+   Collections + Generics
+   Transaction Management
+   Error Handling
+   Basic UI (Login + Workout Log)
 
 
-Not included (Review-2 features)
+** Not included (Review-2 features)
 
-    Admin Module
-    Challenges System
-    Activity Logs 
-    User Profile
-    Fitness Content System
-    System Settings 
-    Analytics / Graphs
-    Exporting / Reports
+   Admin Module
+   Challenges System
+   Activity Logs 
+   User Profile
+   Fitness Content System
+   System Settings 
+   Analytics / Graphs
+   Exporting / Reports
 
 ###  Project Directory Structure:-
      OnlineFitnessTracker/
