@@ -1,5 +1,5 @@
 # Online-Fitness-Tracking-Application
-The application will allow users to log their workouts, set fitness goals, and track their progress over time. It will provide personalized fitness recommendations and allow users to join fitness challenges. Administrators will handle user management, oversee fitness content, and maintain system settings.
+This is GUI based project for GUVI Review 1. The application will allow users to log their workouts, set fitness goals, and track their progress over time. It will provide personalized fitness recommendations and allow users to join fitness challenges. Administrators will handle user management, oversee fitness content, and maintain system settings.
 
 
 ## Project Overview:-
@@ -178,26 +178,21 @@ This version is intentionally limited to meet Review-1 requirements
       - Launch:
         
                  MainApp.java
-# 8. OOP Concepts Used
-Encapsulation
+## OOP Concepts Used       
+   - Encapsulation
+        - Private fields + getters/setters.
 
-Private fields + getters/setters.
+  - Abstraction
+        - DAO interfaces & Service interfaces.
 
-Abstraction
+   - Polymorphism
+      - ServiceImpl overrides interface methods.
 
-DAO interfaces & Service interfaces.
+  - Exception Handling
+      - Try-catch across layers.
 
-Polymorphism
-
-ServiceImpl overrides interface methods.
-
-Exception Handling
-
-Try-catch across layers.
-
-Clean Architecture
-
-DAO → Service → UI separation.
+  - Clean Architecture
+     - DAO → Service → UI separation.
 
 # 9.Future Scope (For Review-2)
 
