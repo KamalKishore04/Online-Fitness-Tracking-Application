@@ -153,10 +153,10 @@ This version is intentionally limited to meet Review-1 requirements
                conn.commit()
                conn.rollback()
 
-   8. Exception & Error Handling
-     -  DAO
-     - Service
-     -  UI
+   8. Exception & Error Handling     
+       -  dao
+       - service
+       -  ui
 
 ###  How to Run
    * Step 1
