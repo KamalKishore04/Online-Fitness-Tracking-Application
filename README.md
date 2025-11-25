@@ -195,16 +195,16 @@ This version is intentionally limited to meet Review-1 requirements
      - DAO → Service → UI separation.
 
 ## Future Scope (For Review-2):-                    
-  Review-2 will add:
-     - Admin Dashboard
-     - Challenges
-     - User Progress Tracking
-     - Fitness Content System
-     - System Settings 
-     - User Profile
-     - Activity Logs
-     - Data Visualization
-     - Export Features (PDF/Excel)
+  Review-2 will add:        
+        - Admin Dashboard      
+        - Challenges      
+        - User Progress Tracking         
+        - Fitness Content System    
+        - System Settings         
+        - User Profile         
+        - Activity Logs    
+        - Data Visualization        
+        - Export Features (PDF/Excel)  
 
 # 10. Conclusion
 
