@@ -159,15 +159,15 @@ This version is intentionally limited to meet Review-1 requirements
        -  ui
 
 ##  How to Run:-         
-   -  Step 1:-                          
-      Install
+   -  Step 1                          
+     - Install
       - Java 17
       - MySQL 8
       - IntelliJ IDEA
       -  MySQL JDBC Driver (Connector/J)
 
-   - Step 2:-                  
-     Configure Database
+   - Step 2                
+    -  Configure Database
      
             sql/fitness_db.sql
    - Step 3
