@@ -80,15 +80,14 @@ Not included (Review-2 features)
      └── README.md
 
 ### Technology Stack
-
-    | Layer        | Technology                |
-    | ------------ | ------------------------- |
-    | Language     | Java 17                   |
-    | UI Framework | Java Swing                |
-    | Database     | MySQL 8                   |
-    | Connectivity | JDBC                      |
-    | Architecture | DAO + Service + MVC       |
-    | IDE          | IntelliJ IDEA (non-Maven) |
+   | Layer        | Technology                |
+   | ------------ | ------------------------- |
+   | Language     | Java 17                   |
+   | UI Framework | Java Swing                |
+   | Database     | MySQL 8                   |
+   | Connectivity | JDBC                      |
+   | Architecture | DAO + Service + MVC       |
+   | IDE          | IntelliJ IDEA (non-Maven) |
 
 
 ### Database Schema
