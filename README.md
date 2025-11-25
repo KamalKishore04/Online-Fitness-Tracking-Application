@@ -2,7 +2,7 @@
 The application will allow users to log their workouts, set fitness goals, and track their progress over time. It will provide personalized fitness recommendations and allow users to join fitness challenges. Administrators will handle user management, oversee fitness content, and maintain system settings.
 
 
-### Project Overview:-
+## Project Overview:-
 
 
 The Online Fitness Tracker (Review-1 Version) is the foundational stage of a multi-module fitness application.
@@ -12,8 +12,8 @@ This version is intentionally limited to meet Review-1 requirements
 
 
 
-###  Review-1 Scope:-
-  ##### Included:-
+## Review-1 Scope:-
+  #### Included:-
 
   1. Login System (Swing + JDBC)
   2.  DB Connection (MySQL + JDBC)
@@ -38,7 +38,7 @@ This version is intentionally limited to meet Review-1 requirements
   7. Analytics / Graphs
   8. Exporting / Reports
 
-###  Project Directory Structure:-
+##  Project Directory Structure:-
      OnlineFitnessTracker/
      │
      ├── sql/
@@ -80,7 +80,7 @@ This version is intentionally limited to meet Review-1 requirements
      │
      └── README.md
 
-### Technology Stack:-
+## Technology Stack:-
    | Layer                      | Technology                |
    | -------------------------- | ------------------------- |
    | Language                   | Java 17                   |
@@ -91,7 +91,7 @@ This version is intentionally limited to meet Review-1 requirements
    | IDE                        | IntelliJ IDEA (non-Maven) |
 
 
-### Database Schema:-
+## Database Schema:-
 
    Table: users
 
@@ -117,14 +117,13 @@ This version is intentionally limited to meet Review-1 requirements
 
 
 
-### Features Implemented
+## Features Implemented
    1. Login System
-      
-          Swing UI
-          Email & password validation
-          Error messages
-          Successful login → Workout Log Screen
-          Uses AuthService + UserDao
+          a.  Swing UI
+          b.  Email & password validation
+          c.  Error messages
+          d.  Successful login → Workout Log Screen
+          e.  Uses AuthService + UserDao
 
    2. DAO Layer
    
