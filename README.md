@@ -178,7 +178,7 @@ This version is intentionally limited to meet Review-1 requirements
       - Launch:
         
                  MainApp.java
-## OOP Concepts Used       
+## OOP Concepts Used:-       
    - Encapsulation
         - Private fields + getters/setters.
 
@@ -194,27 +194,17 @@ This version is intentionally limited to meet Review-1 requirements
   - Clean Architecture
      - DAO → Service → UI separation.
 
-# 9.Future Scope (For Review-2)
-
-Review-2 will add:
-
-Admin Dashboard
-
-Challenges
-
-User Progress Tracking
-
-Fitness Content System
-
-System Settings
-
-User Profile
-
-Activity Logs
-
-Data Visualization
-
-Export Features (PDF/Excel)
+## Future Scope (For Review-2):-                    
+  Review-2 will add:
+     - Admin Dashboard
+     - Challenges
+     - User Progress Tracking
+     - Fitness Content System
+     - System Settings 
+     - User Profile
+     - Activity Logs
+     - Data Visualization
+     - Export Features (PDF/Excel)
 
 # 10. Conclusion
 
