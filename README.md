@@ -158,26 +158,30 @@ This version is intentionally limited to meet Review-1 requirements
        - service
        -  ui
 
-###  How to Run
-   * Step 1
-      Install -  Java 17
-                 MySQL 8
-                 IntelliJ IDEA
-                 MySQL JDBC Driver (Connector/J)
+##  How to Run:-         
+   -  Step 1         
+      Install
+      - Java 17
+      - MySQL 8
+      - IntelliJ IDEA
+      -  MySQL JDBC Driver (Connector/J)
 
-Step 2 — Configure Database
- sql/fitness_db.sql
-Step 3 — Update DB Credentials
+   - Step 2
+     Configure Database
+     
+            sql/fitness_db.sql
+   - Step 3
+      -  Update DB Credential
 
-Edit:
-src/com/fitnesstracker/util/DBConnection.java
-
-Set:
-URL, USER, PASSWORD
-Step 4 — Run Application
-
-Launch:
-MainApp.java
+             src/com/fitnesstracker/util/DBConnection.java
+         Set:
+         
+                       URL, USER, PASSWORD
+  - Step 4
+      -  Run Application
+      - Launch:
+        
+                 MainApp.java
 # 8. OOP Concepts Used
 Encapsulation
 
