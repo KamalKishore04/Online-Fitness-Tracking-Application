@@ -1,5 +1,6 @@
 package com.fitnesstracker.dao;
 
+
 import com.fitnesstracker.model.User;
 
 import java.sql.SQLException;
