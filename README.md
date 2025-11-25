@@ -118,17 +118,17 @@ This version is intentionally limited to meet Review-1 requirements
 
 
 ## Features Implemented
-   1. Login System  
-          a.  Swing UI
-          b.  Email & password validation
-          c.  Error messages
-          d.  Successful login → Workout Log Screen
-          e.  Uses AuthService + UserDao
+   1. Login System              
+             a.  Swing UI       
+             b.  Email & password validation    
+             c.  Error messages      
+             d.  Successful login → Workout Log Screen     
+             e.  Uses AuthService + UserDao
+      
 
-   3. DAO Layer
-   
-          UserDao + WorkoutDao
-          PreparedStatement (safe from SQL injection)
+   2. DAO Layer                  
+             a. UserDao + WorkoutDao       
+             b. PreparedStatement (safe from SQL injection)        
 
    4. Service Layer
       
