@@ -11,7 +11,7 @@ This version is intentionally limited to meet Review-1 requirements
 
 
 
-## 2. Review-1 Scope
+##  Review-1 Scope
  Included
 
     Login System (Swing + JDBC)
@@ -37,7 +37,7 @@ Not included (Review-2 features)
     Analytics / Graphs
     Exporting / Reports
 
-# 3. Project Directory Structure
+##  Project Directory Structure
      OnlineFitnessTracker/
      │
      ├── sql/
@@ -79,7 +79,7 @@ Not included (Review-2 features)
      │
      └── README.md
 
-# 4. Technology Stack
+## Technology Stack
 
     | Layer        | Technology                |
     | ------------ | ------------------------- |
@@ -91,7 +91,7 @@ Not included (Review-2 features)
     | IDE          | IntelliJ IDEA (non-Maven) |
 
 
-# 5. Database Schema
+## Database Schema
 
    Table: users
 
@@ -118,8 +118,8 @@ Not included (Review-2 features)
 
 
 # 6. Features Implemented
-
    1. Login System
+      
           Swing UI
           Email & password validation
           Error messages
@@ -127,30 +127,37 @@ Not included (Review-2 features)
           Uses AuthService + UserDao
 
    2. DAO Layer
+   
           UserDao + WorkoutDao
           PreparedStatement (safe from SQL injection)
 
    3. Service Layer
+      
           Validation of inputs
           Business rules
           Simplified logic for Review-1
       
    4. Multithreading
+      
           Login operation runs in:
                    new Thread(this::handleLogin).start();
           Prevents UI freezing.
 
    5. Collections & Generics
+      
           Workouts fetched as:
                    List<Workout> workouts = new ArrayList<>();
 
    6. Transaction Management
-         Used in WorkoutDaoImpl:
-         conn.setAutoCommit(false);
-         conn.commit();
-         conn.rollback();
 
-   7. Exception & Error Handling
+
+          Used in WorkoutDaoImpl
+          conn.setAutoCommit(false)
+          conn.commit()
+          conn.rollback()
+
+   7.. Exception & Error Handling
+   
           DAO
           Service
           UI
