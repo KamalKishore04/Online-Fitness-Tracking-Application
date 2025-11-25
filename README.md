@@ -119,11 +119,11 @@ This version is intentionally limited to meet Review-1 requirements
 
 ## Features Implemented
    1. Login System              
-               - Swing UI       
-               - Email & password validation    
-               - Error messages      
-               - Successful login → Workout Log Screen     
-               - Uses AuthService + UserDao
+      - Swing UI       
+      - Email & password validation    
+      - Error messages      
+       - Successful login → Workout Log Screen     
+       - Uses AuthService + UserDao
       
 
    2. DAO Layer                  
