@@ -1,8 +1,8 @@
-### Online-Fitness-Tracking-Application
+## Online-Fitness-Tracking-Application
 The application will allow users to log their workouts, set fitness goals, and track their progress over time. It will provide personalized fitness recommendations and allow users to join fitness challenges. Administrators will handle user management, oversee fitness content, and maintain system settings.
 
 
-# 1. Project Overview
+## Project Overview
 
 The Online Fitness Tracker (Review-1 Version) is the foundational stage of a multi-module fitness application.
 It includes core architecture, login functionality, DAO–Service structure, database connectivity, error handling, and a minimal workout log screen.
@@ -11,54 +11,37 @@ This version is intentionally limited to meet Review-1 requirements
 
 
 
-# 2. Review-1 Scope
-✔ Included
+## 2. Review-1 Scope
+   # Included
 
-Login System (Swing + JDBC)
+    Login System (Swing + JDBC)
+    DB Connection (MySQL + JDBC)
+    User & Workout Models
+    DAO Interfaces + Implementations
+    Service Layer + Validation
+    Multithreading (login thread)
+    Collections + Generics
+    Transaction Management
+    Error Handling
+    Basic UI (Login + Workout Log)
 
-DB Connection (MySQL + JDBC)
-
-User & Workout Models
-
-DAO Interfaces + Implementations
-
-Service Layer + Validation
-
-Multithreading (login thread)
-
-Collections + Generics
-
-Transaction Management
-
-Error Handling
-
-Basic UI (Login + Workout Log)
-
-❌ Not included (Review-2 features)
-
-Admin Module
-
-Challenges System
-
-Activity Logs
-
-User Profile
-
-Fitness Content System
-
-System Settings
-
-Analytics / Graphs
-
-Exporting / Reports
+# Not included (Review-2 features)
+    Admin Module
+    Challenges System
+    Activity Logs 
+    User Profile
+    Fitness Content System
+    System Settings 
+    Analytics / Graphs
+    Exporting / Reports
 
 # 3. Project Directory Structure
-OnlineFitnessTracker/
-│
-├── sql/
-│   └── fitness_db.sql
-│
-├── src/
+     OnlineFitnessTracker/
+     │
+     ├── sql/
+     │   └── fitness_db.sql
+     │
+     ├── src/
 │   └── com/fitnesstracker/
 │
 │       ├── model/
