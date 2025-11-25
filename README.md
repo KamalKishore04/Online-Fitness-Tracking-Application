@@ -16,7 +16,7 @@ This version is intentionally limited to meet Review-1 requirements
 
   -  Login System (Swing + JDBC)  
   - DB Connection (MySQL + JDBC)     
-  - User & Workout Models        
+  - All Model classes        
   - DAO Interfaces + Implementations           
   - Service Layer + Validation           
   -  Multithreading (login thread)       
@@ -48,8 +48,13 @@ This version is intentionally limited to meet Review-1 requirements
      │
      │       ├── model/
      │       │   ├── User.java
-     │       │   └── Workout.java
-     │
+     │       │   |── Workout.java
+     |       |   |── ActivityLog .java
+     |       |   |── Challenge.java
+     |       |   |── FitnessContent
+     |       |   |── SystemSetting
+     |       |   └── UserChallenge 
+     |       |
      │       ├── dao/
      │       │   ├── UserDao.java
      │       │   ├── WorkoutDao.java
