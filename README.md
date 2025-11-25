@@ -12,7 +12,7 @@ This version is intentionally limited to meet Review-1 requirements
 
 
 ## 2. Review-1 Scope
-   # Included
+ Included
 
     Login System (Swing + JDBC)
     DB Connection (MySQL + JDBC)
@@ -25,7 +25,7 @@ This version is intentionally limited to meet Review-1 requirements
     Error Handling
     Basic UI (Login + Workout Log)
 
-# Not included (Review-2 features)
+Not included (Review-2 features)
     Admin Module
     Challenges System
     Activity Logs 
@@ -42,128 +42,116 @@ This version is intentionally limited to meet Review-1 requirements
      │   └── fitness_db.sql
      │
      ├── src/
-│   └── com/fitnesstracker/
-│
-│       ├── model/
-│       │   ├── User.java
-│       │   └── Workout.java
-│
-│       ├── dao/
-│       │   ├── UserDao.java
-│       │   ├── WorkoutDao.java
-│       │   └── impl/
-│       │       ├── UserDaoImpl.java
-│       │       └── WorkoutDaoImpl.java
-│
-│       ├── service/
-│       │   ├── AuthService.java
-│       │   ├── WorkoutService.java
-│       │   └── impl/
-│       │       ├── AuthServiceImpl.java
-│       │       └── WorkoutServiceImpl.java
-│
-│       ├── ui/
-│       │   └── auth/
-│       │       └── LoginFrame.java
-│       │
-│       │   └── user/
-│       │       └── WorkoutLogFrame.java
-│
-│       ├── util/
-│       │   └── DBConnection.java
-│
-│       └── main/
-│           └── MainApp.java
-│
-└── README.md
+     │   └── com/fitnesstracker/
+     │
+     │       ├── model/
+     │       │   ├── User.java
+     │       │   └── Workout.java
+     │
+     │       ├── dao/
+     │       │   ├── UserDao.java
+     │       │   ├── WorkoutDao.java
+     │       │   └── impl/
+     │       │       ├── UserDaoImpl.java
+     │       │       └── WorkoutDaoImpl.java
+     │
+     │       ├── service/
+     │       │   ├── AuthService.java
+     │       │   ├── WorkoutService.java
+     │       │   └── impl/
+     │       │       ├── AuthServiceImpl.java
+     │       │       └── WorkoutServiceImpl.java
+     │
+     │       ├── ui/
+     │       │   └── auth/
+     │       │       └── LoginFrame.java
+     │       │
+     │       │   └── user/
+     │       │       └── WorkoutLogFrame.java
+     │
+     │       ├── util/
+     │       │   └── DBConnection.java
+     │
+     │       └── main/
+     │           └── MainApp.java
+     │
+     └── README.md
 
 # 4. Technology Stack
-| Layer        | Technology                |
-| ------------ | ------------------------- |
-| Language     | Java 17                   |
-| UI Framework | Java Swing                |
-| Database     | MySQL 8                   |
-| Connectivity | JDBC                      |
-| Architecture | DAO + Service + MVC       |
-| IDE          | IntelliJ IDEA (non-Maven) |
+
+    | Layer        | Technology                |
+    | ------------ | ------------------------- |
+    | Language     | Java 17                   |
+    | UI Framework | Java Swing                |
+    | Database     | MySQL 8                   |
+    | Connectivity | JDBC                      |
+    | Architecture | DAO + Service + MVC       |
+    | IDE          | IntelliJ IDEA (non-Maven) |
 
 
 # 5. Database Schema
 
-Table: users
+   Table: users
 
-| Column   | Type                     | Description           |
-| -------- | ------------------------ | --------------------- |
-| id       | INT (PK, AUTO_INCREMENT) | User ID               |
-| name     | VARCHAR(100)             | User name             |
-| email    | VARCHAR(100)             | Unique email          |
-| password | VARCHAR(100)             | Plain password for R1 |
-| role     | ENUM("USER")             | Only USER role in R1  |
+    | Column   | Type                     | Description           |
+    | -------- | ------------------------ | --------------------- |
+    | id       | INT (PK, AUTO_INCREMENT) | User ID               |
+    | name     | VARCHAR(100)             | User name             |
+    | email    | VARCHAR(100)             | Unique email          |
+    | password | VARCHAR(100)             | Plain password for R1 |
+    | role     | ENUM("USER")             | Only USER role in R1  |
 
 
-Table: workouts
+   Table: workouts
 
-| Column       | Type                     | Description     |
-| ------------ | ------------------------ | --------------- |
-| id           | INT (PK, AUTO_INCREMENT) | Workout ID      |
-| user_id      | INT FK                   | Ref to users.id |
-| workout_type | VARCHAR(50)              | Cardio/Yoga/etc |
-| duration     | INT                      | Time in minutes |
-| workout_date | DATE                     | Date of workout |
+    | Column       | Type                     | Description     |
+    | ------------ | ------------------------ | --------------- |
+    | id           | INT (PK, AUTO_INCREMENT) | Workout ID      |
+    | user_id      | INT FK                   | Ref to users.id |
+    | workout_type | VARCHAR(50)              | Cardio/Yoga/etc |
+    | duration     | INT                      | Time in minutes |
+    | workout_date | DATE                     | Date of workout |
 
 
 
 
 # 6. Features Implemented
-1. Login System
 
-Swing UI
+   1. Login System
+          Swing UI
+          Email & password validation
+          Error messages
+          Successful login → Workout Log Screen
+          Uses AuthService + UserDao
 
-Email & password validation
+   2. DAO Layer
+          UserDao + WorkoutDao
+          PreparedStatement (safe from SQL injection)
 
-Error messages
+   3. Service Layer
+          Validation of inputs
+          Business rules
+          Simplified logic for Review-1
+      
+   4. Multithreading
+          Login operation runs in:
+                   new Thread(this::handleLogin).start();
+          Prevents UI freezing.
 
-Successful login → Workout Log Screen
+   5. Collections & Generics
+          Workouts fetched as:
+                   List<Workout> workouts = new ArrayList<>();
 
-Uses AuthService + UserDao
+   6. Transaction Management
+         Used in WorkoutDaoImpl:
+         conn.setAutoCommit(false);
+         conn.commit();
+         conn.rollback();
 
-2. DAO Layer
-
-UserDao + WorkoutDao
-
-PreparedStatement (safe from SQL injection)
-
-3. Service Layer
-   Validation of inputs
-
-Business rules
-
-Simplified logic for Review-1
-4. Multithreading
-
-Login operation runs in:
-new Thread(this::handleLogin).start();
-Prevents UI freezing.
-
-5. Collections & Generics
-
-Workouts fetched as:
-List<Workout> workouts = new ArrayList<>();
-
-6. Transaction Management
-
-Used in WorkoutDaoImpl:
-conn.setAutoCommit(false);
-conn.commit();
-conn.rollback();
-
-7. Exception & Error Handling
-
-DAO
-
-Service
-
-UI
+   7. Exception & Error Handling
+          DAO
+          Service
+          UI
 
 # 7. How to Run
 Step 1 — Install
