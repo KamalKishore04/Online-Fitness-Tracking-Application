@@ -13,7 +13,7 @@ This version is intentionally limited to meet Review-1 requirements
 
 
 ###  Review-1 Scope:-
-##### Included:-
+  ##### Included:-
 
   1. Login System (Swing + JDBC)
   2.  DB Connection (MySQL + JDBC)
@@ -27,7 +27,7 @@ This version is intentionally limited to meet Review-1 requirements
  10.  Basic UI (Login + Workout Log)
 
 
-#### Not included (Review-2 features)
+  #### Not included (Review-2 features)
 
   1. Admin Module
   2.Challenges System
@@ -81,38 +81,38 @@ This version is intentionally limited to meet Review-1 requirements
      └── README.md
 
 ### Technology Stack:-
-   | Layer        | Technology                |
-   | ------------ | ------------------------- |
-   | Language     | Java 17                   |
-   | UI Framework | Java Swing                |
-   | Database     | MySQL 8                   |
-   | Connectivity | JDBC                      |
-   | Architecture | DAO + Service + MVC       |
-   | IDE          | IntelliJ IDEA (non-Maven) |
+   | Layer                      | Technology                |
+   | -------------------------- | ------------------------- |
+   | Language                   | Java 17                   |
+   | UI Framework               | Java Swing                |
+   | Database                   | MySQL 8                   |
+   | Connectivity               | JDBC                      |
+   | Architecture               | DAO + Service + MVC       |
+   | IDE                        | IntelliJ IDEA (non-Maven) |
 
 
 ### Database Schema:-
 
    Table: users
 
-   | Column   | Type                     | Description           |
-   | -------- | ------------------------ | --------------------- |
-   | id       | INT (PK, AUTO_INCREMENT) | User ID               |
-   | name     | VARCHAR(100)             | User name             |
-   | email    | VARCHAR(100)             | Unique email          |
-   | password | VARCHAR(100)             | Plain password for R1 |
-   | role     | ENUM("USER")             | Only USER role in R1  |
+   | Column                | Type                     | Description           |
+   | --------------------- | ------------------------ | --------------------- |
+   | id                    | INT (PK, AUTO_INCREMENT) | User ID               |
+   | name                  | VARCHAR(100)             | User name             |
+   | email                 | VARCHAR(100)             | Unique email          |
+   | password              | VARCHAR(100)             | Plain password for R1 |
+   | role                  | ENUM("USER")             | Only USER role in R1  |
 
 
    Table: workouts
 
-   | Column       | Type                     | Description     |
-   | ------------ | ------------------------ | --------------- |
-   | id           | INT (PK, AUTO_INCREMENT) | Workout ID      |
-   | user_id      | INT FK                   | Ref to users.id |
-   | workout_type | VARCHAR(50)              | Cardio/Yoga/etc |
-   | duration     | INT                      | Time in minutes |
-   | workout_date | DATE                     | Date of workout |
+   | Column                | Type                     | Description          |
+   | --------------------- | ------------------------ | -------------------- |
+   | id                    | INT (PK, AUTO_INCREMENT) | Workout ID           |
+   | user_id               | INT FK                   | Ref to users.id      |
+   | workout_type          | VARCHAR(50)              | Cardio/Yoga/etc      |
+   | duration              | INT                      | Time in minutes      |
+   | workout_date          | DATE                     | Date of workout      |
 
 
 
