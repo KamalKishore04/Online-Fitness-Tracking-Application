@@ -206,22 +206,15 @@ This version is intentionally limited to meet Review-1 requirements
   - Data Visualization
   - Export Features (PDF/Excel)  
 
-# 10. Conclusion
+##  Conclusion:-
 
 This Review-1 version establishes the complete architecture and essential functionality needed for the full Online Fitness Tracker system.
 It demonstrates:
-
-Clean coding style
-
-OOP mastery
-
-JDBC understanding
-
-Architectural planning
-
-Practical GUI development
-
-Perfectly aligned with Review-1 expectations, ready for final expansion in Review-2.
+- Clean coding style
+- OOP mastery
+- JDBC understanding
+- Architectural planning
+- Practical GUI development
 
 
 
