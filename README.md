@@ -119,35 +119,35 @@ This version is intentionally limited to meet Review-1 requirements
 
 ## Features Implemented
    1. Login System
-          a.  Swing UI
-          b.  Email & password validation
-          c.  Error messages
-          d.  Successful login → Workout Log Screen
-          e.  Uses AuthService + UserDao
+          1 a.  Swing UI
+          2 b.  Email & password validation
+          2 c.  Error messages
+         4  d.  Successful login → Workout Log Screen
+         5 e.  Uses AuthService + UserDao
 
-   2. DAO Layer
+   3. DAO Layer
    
           UserDao + WorkoutDao
           PreparedStatement (safe from SQL injection)
 
-   3. Service Layer
+   4. Service Layer
       
           Validation of inputs
           Business rules
           Simplified logic for Review-1
       
-   4. Multithreading
+   5. Multithreading
       
           Login operation runs in:
                    new Thread(this::handleLogin).start();
           Prevents UI freezing.
 
-   5. Collections & Generics
+   6. Collections & Generics
       
           Workouts fetched as:
                    List<Workout> workouts = new ArrayList<>();
 
-   6. Transaction Management
+   7. Transaction Management
 
 
           Used in WorkoutDaoImpl
