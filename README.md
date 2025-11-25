@@ -25,7 +25,9 @@ This version is intentionally limited to meet Review-1 requirements
     Error Handling
     Basic UI (Login + Workout Log)
 
+
 Not included (Review-2 features)
+
     Admin Module
     Challenges System
     Activity Logs 
