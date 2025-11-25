@@ -1,8 +1,8 @@
-## Online-Fitness-Tracking-Application
+### Online-Fitness-Tracking-Application
 The application will allow users to log their workouts, set fitness goals, and track their progress over time. It will provide personalized fitness recommendations and allow users to join fitness challenges. Administrators will handle user management, oversee fitness content, and maintain system settings.
 
 
-#1. Project Overview
+# 1. Project Overview
 
 The Online Fitness Tracker (Review-1 Version) is the foundational stage of a multi-module fitness application.
 It includes core architecture, login functionality, DAO–Service structure, database connectivity, error handling, and a minimal workout log screen.
@@ -11,7 +11,7 @@ This version is intentionally limited to meet Review-1 requirements
 
 
 
-#2. Review-1 Scope
+# 2. Review-1 Scope
 ✔ Included
 
 Login System (Swing + JDBC)
@@ -52,7 +52,7 @@ Analytics / Graphs
 
 Exporting / Reports
 
-#3. Project Directory Structure
+# 3. Project Directory Structure
 OnlineFitnessTracker/
 │
 ├── sql/
@@ -94,7 +94,7 @@ OnlineFitnessTracker/
 │
 └── README.md
 
-#4. Technology Stack
+# 4. Technology Stack
 | Layer        | Technology                |
 | ------------ | ------------------------- |
 | Language     | Java 17                   |
@@ -105,7 +105,7 @@ OnlineFitnessTracker/
 | IDE          | IntelliJ IDEA (non-Maven) |
 
 
-#5. Database Schema
+# 5. Database Schema
 
 Table: users
 
@@ -131,7 +131,7 @@ Table: workouts
 
 
 
-#6. Features Implemented
+# 6. Features Implemented
 1. Login System
 
 Swing UI
@@ -182,7 +182,7 @@ Service
 
 UI
 
-#7. How to Run
+# 7. How to Run
 Step 1 — Install
 
 Java 17
@@ -206,7 +206,7 @@ Step 4 — Run Application
 
 Launch:
 MainApp.java
-#8. OOP Concepts Used
+# 8. OOP Concepts Used
 Encapsulation
 
 Private fields + getters/setters.
@@ -249,7 +249,7 @@ Data Visualization
 
 Export Features (PDF/Excel)
 
-# 11. Conclusion
+# 10. Conclusion
 
 This Review-1 version establishes the complete architecture and essential functionality needed for the full Online Fitness Tracker system.
 It demonstrates:
