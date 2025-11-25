@@ -131,9 +131,9 @@ This version is intentionally limited to meet Review-1 requirements
        -  PreparedStatement (safe from SQL injection)        
 
    3. Service Layer                
-          - Validation of inputs         
-          - Business rules           
-          -  Simplified logic for Review-1        
+       - Validation of inputs         
+       - Business rules           
+       -  Simplified logic for Review-1        
       
    4. Multithreading                  
       - Login operation runs in:
@@ -142,23 +142,21 @@ This version is intentionally limited to meet Review-1 requirements
       - Prevents UI freezing.                   
 
    6. Collections & Generics
-      
-          Workouts fetched as:
-                   List<Workout> workouts = new ArrayList<>();
+      - Workouts fetched as:
+        
+                 List<Workout> workouts = new ArrayList<>();
 
    7. Transaction Management
-
-
-          Used in WorkoutDaoImpl
+      - Used in WorkoutDaoImpl
+        
                conn.setAutoCommit(false)
                conn.commit()
                conn.rollback()
 
-   7.. Exception & Error Handling
-   
-          DAO
-          Service
-          UI
+   8. Exception & Error Handling
+     -  DAO
+     - Service
+     -  UI
 
 ###  How to Run
    * Step 1
