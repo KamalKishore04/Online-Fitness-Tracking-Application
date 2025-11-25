@@ -4,7 +4,6 @@ This is GUI based project for GUVI Review 1. The application will allow users to
 
 ## Project Overview:-
 
-
 The Online Fitness Tracker (Review-1 Version) is the foundational stage of a multi-module fitness application.
 It includes core architecture, login functionality, DAO–Service structure, database connectivity, error handling, and a minimal workout log screen.
 
