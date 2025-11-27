@@ -44,7 +44,7 @@ This version is intentionally limited to meet Review-1 requirements
      │
      ├── src/
      │   └── com/fitnesstracker/
-     │
+     │       │
      │       ├── model/
      │       │   ├── User.java
      │       │   |── Workout.java
@@ -99,10 +99,10 @@ This version is intentionally limited to meet Review-1 requirements
      │       │
      │       │   └── user/
      │       │       └── WorkoutLogFrame.java
-     │
+     │       │
      │       ├── util/
      │       │   └── DBConnection.java
-     │
+     │       │
      │       └── main/
      │           └── MainApp.java
      │
