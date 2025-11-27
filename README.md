@@ -12,9 +12,9 @@ This version is intentionally limited to meet Review-1 requirements
 
 ## Review-1 Scope:-
   #### Included:-               
-
-  -  Login System (Swing + JDBC)  
-  - DB Connection (MySQL + JDBC)     
+  
+  - DB Connection (MySQL + JDBC)
+  - mysql-connector-j-9.5.0   
   - All Model classes        
   - DAO Interfaces + Implementations           
   - Service Layer + Validation           
@@ -149,7 +149,7 @@ This version is intentionally limited to meet Review-1 requirements
 
 
 ## Features Implemented
-   1. Login System              
+   1. Login System(Basic ui)            
        - Swing UI       
        - Email & password validation    
        - Error messages      
