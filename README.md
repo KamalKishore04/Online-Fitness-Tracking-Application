@@ -39,6 +39,9 @@ This version is intentionally limited to meet Review-1 requirements
 ##  Project Directory Structure:-
      OnlineFitnessTracker/
      │
+     ├── lib/
+     │   └── mysql-connector-j-9.5.0.jar
+     │       
      ├── sql/
      │   └── fitness_db.sql
      │
