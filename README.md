@@ -57,17 +57,42 @@ This version is intentionally limited to meet Review-1 requirements
      │       ├── dao/
      │       │   ├── UserDao.java
      │       │   ├── WorkoutDao.java
+     |       |   |── ActivityLogDao.java
+     |       |   |── ChallengeDao.java
+     |       |   |── FitnessContentDao.java
+     |       |   |── SystemSettingDao.java
+     |       |   |── UserChallengeDao.java
+     |       |   |
      │       │   └── impl/
      │       │       ├── UserDaoImpl.java
-     │       │       └── WorkoutDaoImpl.java
-     │
+     │       │       |── WorkoutDaoImpl.java
+     |       |       |── ActivityLogDao.java
+     |       |       |── ChallengeDao.java
+     |       |       |── FitnessContentDao.java
+     |       |       |── SystemSettingDao.java
+     |       |       └── UserChallengeDao.java
+     |       |   
+     |       |
      │       ├── service/
      │       │   ├── AuthService.java
      │       │   ├── WorkoutService.java
+     │       │   ├── ActivityLogService.java
+     │       │   ├── ChallengeService.java
+     │       │   ├── FitnessContentService.java
+     │       │   ├── ProfileService.java
+     │       │   ├── SystemSettingService.java
+     │       │   │── UserChallengeService.java
+     │       │   │ 
      │       │   └── impl/
      │       │       ├── AuthServiceImpl.java
-     │       │       └── WorkoutServiceImpl.java
-     │
+     │       │       ├── WorkoutServiceImpl.java
+     │       │       ├── ActivityLogServiceImpl.java
+     │       │       ├── ChallengeServiceImpl.java
+     │       │       ├── FitnessContentServiceImpl.java
+     │       │       ├── ProfileServiceImpl.java
+     │       │       ├── SystemSettingServiceImpl.java
+     │       │       └── UserChallengeServiceImpl.java
+     │       │
      │       ├── ui/
      │       │   └── auth/
      │       │       └── LoginFrame.java
@@ -198,7 +223,7 @@ This version is intentionally limited to meet Review-1 requirements
      - DAO → Service → UI separation.
 
 ## Future Scope (For Review-2):-                    
-  Review-2 will add:
+  Review-2 will add: ui packages 
   - Admin Dashboard
   - Challenges
   - User Progress Tracking
