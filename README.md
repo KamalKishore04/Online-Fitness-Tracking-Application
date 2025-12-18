@@ -1,5 +1,5 @@
 # Online-Fitness-Tracking-Application
-This is GUI based project for GUVI Review 1. The application will allow users to log their workouts, set fitness goals, and track their progress over time. It will provide personalized fitness recommendations and allow users to join fitness challenges. Administrators will handle user management, oversee fitness content, and maintain system settings.
+This is GUI based project for GUVI. The application will allow users to log their workouts, set fitness goals, and track their progress over time. It will provide personalized fitness recommendations and allow users to join fitness challenges. Administrators will handle user management, oversee fitness content, and maintain system settings.
 
 
 ## Project Overview:-
@@ -10,7 +10,7 @@ It includes core architecture, login functionality, DAO–Service structure, dat
 This version is intentionally limited to meet Review-1 requirements 
 
 
-## Review-1 Scope:-
+##  Scope:-
   #### Included:-               
   
   - DB Connection (MySQL + JDBC)
@@ -23,10 +23,6 @@ This version is intentionally limited to meet Review-1 requirements
   - Transaction Management         
   - Error Handling       
   -  Basic UI (Login + Workout Log)
-
-
-  #### Not included (Review-2 features)
-
   - Admin Module
   - Challenges System
   - Activity Logs 
