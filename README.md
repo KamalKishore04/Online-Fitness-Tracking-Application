@@ -242,7 +242,6 @@ This final version extends the Review-1 architecture by implementing all remaini
 -👨‍💼 Admin Login
 - **Email:** admin@fit.com  
 - **Password:** admin123  
----
 
 -👤 User Login
 - **Email:** user1@fit.com  
