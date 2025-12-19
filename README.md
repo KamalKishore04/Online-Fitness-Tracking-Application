@@ -254,13 +254,14 @@ This final version extends the Review-1 architecture by implementing all remaini
 
 ##  Conclusion:-
 
-This Review-1 version establishes the complete architecture and essential functionality needed for the full Online Fitness Tracker system.
+This project establishes a complete and well-structured architecture for the **Online Fitness Tracking Application** and delivers all essential functionalities required for a full-scale fitness management system.
+
 It demonstrates:
-- Clean coding style
-- OOP mastery
-- JDBC understanding
-- Architectural planning
-- Practical GUI development
+- Clean and maintainable coding practices
+- Strong understanding of Object-Oriented Programming (OOP)
+- Effective use of JDBC for database connectivity
+- Proper architectural planning using DAO and Service layers
+- Practical implementation of a responsive Java Swing GUI
 
 
 
