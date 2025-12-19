@@ -231,11 +231,24 @@ This final version extends the Review-1 architecture by implementing all remaini
              src/com/fitnesstracker/util/DBConnection.java
      Set:
      
-         URL, USER, PASSWORD
+         URL = "jdbc:mysql://localhost:3306/fitness_db";
+         USER = "your_db_username";
+         PASSWORD = "your_db_password";
   - Run Application
       - Launch:
         
                  MainApp.java
+        ## 🔐 Login Credentials (For Evaluation)
+
+### 👨‍💼 Admin Login
+- **Email:** admin@fit.com  
+- **Password:** admin123  
+---
+
+### 👤 User Login
+- **Email:** user1@fit.com  
+- **Password:** user123  
+
 ## OOP Concepts Used:-       
    - Encapsulation
         - Private fields + getters/setters.
