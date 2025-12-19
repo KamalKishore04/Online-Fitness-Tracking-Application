@@ -4,33 +4,48 @@ This is GUI based project for GUVI. The application will allow users to log thei
 
 ## Project Overview:-
 
-The Online Fitness Tracker (Review-1 Version) is the foundational stage of a multi-module fitness application.
-It includes core architecture, login functionality, DAO–Service structure, database connectivity, error handling, and a minimal workout log screen.
+The Online Fitness Tracking Application is a complete, multi-module fitness management system built using Java (JDK 17) with JDBC–MySQL integration.
 
-This version is intentionally limited to meet Review-1 requirements 
+This final version extends the Review-1 architecture by implementing all remaining modules, advanced UI screens, admin controls, analytics, and reporting features while maintaining a clean DAO–Service–UI architecture.
 
 
-##  Scope:-
-  #### Included:-               
-  
-  - DB Connection (MySQL + JDBC)
-  - mysql-connector-j-9.5.0   
-  - All Model classes        
-  - DAO Interfaces + Implementations           
-  - Service Layer + Validation           
-  -  Multithreading (login thread)       
-  -  Collections + Generics       
-  - Transaction Management         
-  - Error Handling       
-  -  Basic UI (Login + Workout Log)
-  - Admin Module
-  - Challenges System
-  - Activity Logs 
-  -  User Profile
-  - Fitness Content System
-  - System Settings 
-  - Analytics / Graphs
-  - Exporting / Reports
+##  Project Scope
+
+###  Included Features
+
+- MySQL database integration using JDBC
+- MySQL Connector/J (`mysql-connector-j-9.5.0`)
+- Complete Model layer implementation
+- DAO interfaces with concrete implementations
+- Service layer with validation and business logic
+- Multithreading for login operations (non-blocking UI)
+- Use of Collections and Generics
+- Transaction management (commit & rollback)
+- Centralized exception and error handling
+
+### 👤 User Features
+- Secure login system
+- Workout logging and workout history
+- User profile management
+- Fitness challenges participation
+- Challenge history tracking
+- User progress tracking
+- Access to fitness content
+- Data visualization of fitness activities
+
+### 🛠️ Admin Features
+- Admin dashboard
+- User management
+- Challenge management
+- Fitness content moderation
+- System settings configuration
+- Activity log monitoring
+
+### 📊 Analytics & Reports
+- Fitness analytics and progress insights
+- Data visualization (charts/graphs)
+- Export features (PDF / Excel)
+
 
 ##  Project Directory Structure:-
      OnlineFitnessTracker/
@@ -93,18 +108,34 @@ This version is intentionally limited to meet Review-1 requirements
      │       │       └── UserChallengeServiceImpl.java
      │       │
      │       ├── ui/
-     │       │   └── auth/
-     │       │       └── LoginFrame.java
-     │       │
-     │       │   └── user/
-     │       │       └── WorkoutLogFrame.java
+     │       |    ├── auth/
+     │       │    |    └── LoginFrame.java
+     |       |    ├──admin/
+     │       │    |    ├── AdminDashboardFrame.java
+     │       │    |    ├── AdminChallengeFrame.java
+     │       │    |    ├── AdminContentModerationFrame.java
+     │       |    |    ├── AdminSystemSettingsFrame.java
+     |       |    |    └── AdminActivityLogFrame.java
+     │       │    └── user/
+     |       |         ├── UserDashboardFrame.java
+     |       |         ├── WorkoutLogFrame.java
+     |       |         ├── AddWorkoutDialog.java
+     |       |         ├── EditWorkoutDialog.java
+     │       │         ├── ChallengeListFrame.java
+     │       │         ├── ChallengeHistoryFrame.java
+     │       │         ├── UserProfileFrame.java
+     │       │         └── FitnessContentSubmitFrame.java
+     │       │ 
+     |       ├── logging/
+     |       |    └── ActivityLogger.java
      │       │
      │       ├── util/
      │       │   └── DBConnection.java
      │       │
      │       └── main/
      │           └── MainApp.java
-     │
+     |
+     ├── fitness-db.sql
      └── README.md
 
 ## Technology Stack:-
@@ -219,19 +250,7 @@ This version is intentionally limited to meet Review-1 requirements
       - Try-catch across layers.
 
   - Clean Architecture
-     - DAO → Service → UI separation.
-
-## Future Scope (For Review-2):-                    
-  Review-2 will add: ui packages 
-  - Admin Dashboard
-  - Challenges
-  - User Progress Tracking
-  - Fitness Content System
-  - System Settings
-  - User Profile
-  - Activity Logs
-  - Data Visualization
-  - Export Features (PDF/Excel)  
+     - DAO → Service → UI separation. 
 
 ##  Conclusion:-
 
