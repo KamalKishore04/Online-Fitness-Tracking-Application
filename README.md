@@ -238,14 +238,13 @@ This final version extends the Review-1 architecture by implementing all remaini
       - Launch:
         
                  MainApp.java
-        ## 🔐 Login Credentials (For Evaluation)
 
-### 👨‍💼 Admin Login
+-👨‍💼 Admin Login
 - **Email:** admin@fit.com  
 - **Password:** admin123  
 ---
 
-### 👤 User Login
+-👤 User Login
 - **Email:** user1@fit.com  
 - **Password:** user123  
 
