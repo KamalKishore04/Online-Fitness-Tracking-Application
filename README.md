@@ -174,48 +174,6 @@ This final version extends the Review-1 architecture by implementing all remaini
 
 
 
-
-## Features Implemented
-   1. Login System(Basic ui)            
-       - Swing UI       
-       - Email & password validation    
-       - Error messages      
-       - Successful login → Workout Log Screen     
-       - Uses AuthService + UserDao
-      
-
-   2. DAO Layer                  
-       - UserDao + WorkoutDao       
-       -  PreparedStatement (safe from SQL injection)        
-
-   3. Service Layer                
-       - Validation of inputs         
-       - Business rules           
-       -  Simplified logic for Review-1        
-      
-   4. Multithreading                  
-      - Login operation runs in:
-      
-                                new Thread(this::handleLogin).start();                          
-      - Prevents UI freezing.                   
-
-   6. Collections & Generics
-      - Workouts fetched as:
-        
-                 List<Workout> workouts = new ArrayList<>();
-
-   7. Transaction Management
-      - Used in WorkoutDaoImpl
-        
-               conn.setAutoCommit(false)
-               conn.commit()
-               conn.rollback()
-
-   8. Exception & Error Handling     
-       -  dao
-       - service
-       -  ui
-
 ##  How to Run:-         
    -  Install
       - Java 17
@@ -247,7 +205,7 @@ This final version extends the Review-1 architecture by implementing all remaini
 - **Email:** user1@fit.com  
 - **Password:** user123  
 
-## OOP Concepts Used:-       
+##  Concepts Used:-       
    - Encapsulation
         - Private fields + getters/setters.
 
